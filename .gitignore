@@ -1,0 +1,51 @@
+.terraform/
+terraform/secrets.auto.tfvars.json
+api/jsconfig.json
+api/.vscode/
+terraform.plan
+secrets.auto.tfvars.json
+terraform/output.json
+
+
+
+# Terraform
+**/.terraform/*
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfplan
+**/crash.log
+**/crash.*.log
+
+# Terraform variable files
+**/*.tfvars
+**/*.tfvars.json
+!**/example.tfvars
+
+# Terraform override files
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+
+# Terraform local backup files
+**/*.backup
+**/*.bak
+
+# Keep provider lock file
+!**/.terraform.lock.hcl
+
+# Credentials and secrets
+pat.txt
+**/pat.txt
+.env
+.env.*
+.aws/
+credentials
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
